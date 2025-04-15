@@ -1,0 +1,10 @@
+[Unit]
+Description=Timer for Eye Reminder Service
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=20min
+Unit=eye-reminder.service
+
+[Install]
+WantedBy=timers.target

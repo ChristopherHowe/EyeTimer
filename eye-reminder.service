@@ -1,0 +1,5 @@
+[Unit]
+Description=Eye Reminder Service
+
+[Service]
+ExecStart=/etc/eye-timer/notification-script.sh
