@@ -12,6 +12,8 @@ echo creating timer directory $timer_dir
 sudo mkdir $timer_dir
 echo mvoing notification script to timer directory
 sudo cp ./notification-script.sh $timer_dir
+echo making notification script executable
+sudo chmod +x $timer_dir/notification-script.sh
 echo moving service file and timer file to systemd directory $systemd_user_dir
 sudo cp ./eye-reminder.service $systemd_user_dir
 sudo cp ./eye-reminder.timer $systemd_user_dir
